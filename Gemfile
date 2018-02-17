@@ -58,3 +58,5 @@ gem 'simple_form'
 gem 'devise'
 
 gem 'jquery-rails'
+
+gem 'will_paginate'
