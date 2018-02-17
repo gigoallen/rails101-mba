@@ -5,4 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_many :groups
   has_many :posts
+  #以下為多對多的設定
+  has_many :group_user_relationships
+  has_many :participated_groups, through: :group_user_relationships, source: :group
 end
